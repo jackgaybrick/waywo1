@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
-  root 'routines#index'
+	root 'routines#index'
 
-  get 'routines/index'
+	resources :routines, :only => [:index, :show, :create, :new]
 
-  get 'routines/show'
-
-  get 'routines/new'
 
 end

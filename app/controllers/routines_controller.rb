@@ -4,10 +4,13 @@ class RoutinesController < ApplicationController
   end
 
   def show
-  	routine = Routine.find(params[:id])
+  	@routine = Routine.find(params[:id])
   end
 
   def new
   	@routine = Routine.new
+  end
+
+  def destroy
   end
 end
