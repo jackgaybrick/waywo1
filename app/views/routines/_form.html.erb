@@ -3,4 +3,4 @@
 <%= f.collection_select :routine_type, Routine.all, :id, :routine_type %>
 <% end %>
 
-<%= button_to "Generate Routine", Routine.find(1), :method => :get %>
+<%= button_to "Generate Routine", Routine.find(1), :method => :get, :class => "button" %>
