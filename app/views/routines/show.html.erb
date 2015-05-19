@@ -1,10 +1,11 @@
 <h1><%= @routine.routine_type %></h1>
 <h3><%= @routine.duration %> Minutes<h3>
-<h4> 3 Sets </h4>
-<% @routine.exercises.each do |exercise| %>
-<ul>
-<li><%= exercise.reps %>
-<%= exercise.name %></li>
-</ul>
-<% end %>
-
+  <h4> 3 Sets </h4>
+  <div class="jumbotron">
+    <% @routine.exercises.each do |exercise| %>
+    <ul>
+      <li><%= exercise.reps %>
+        <%= exercise.name %></li>
+      </ul>
+      <% end %>
+    </div>

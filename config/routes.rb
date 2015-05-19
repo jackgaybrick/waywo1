@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
+
 	root 'routines#index'
 
-	resources :routines, :only => [:index, :show, :create, :new]
-
-
+  # resources :routines
+	resources :routines, :only => [:index, :show]
+  # resources :routines, :except => [:create, :new, :edit, :update, :destroy]
 end
